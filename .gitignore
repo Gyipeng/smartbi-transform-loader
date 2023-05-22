@@ -1,0 +1,7 @@
+node_modules/
+dist/
+/dist
+/*.gz
+/.idea
+/*.lock
+/.vscode
