@@ -3,7 +3,7 @@ const fs = require('fs')  // 调试用
 const parser = require('@babel/parser')
 const traverse = require('@babel/traverse').default
 const generate = require("@babel/generator").default
-module.exports = function changePrefixLoader(source) {
+module.exports = function smartbiTransformLoader(source) {
   const { prefix = 'el-', replace = 'ka-' } = loaderUtils.getOptions(this) || {}
   const result = handleSource(source, prefix, replace)
   // writeFile(result.code)
